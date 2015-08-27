@@ -11,7 +11,6 @@ public class Greeting {
     public static Greeting createGreeting(int low, int high, String msg, int priority) {
         return new Greeting(Range.closedOpen(low, high), msg, priority);
     }
-
     private Greeting(Range<Integer> timeRange, String msg, int priority) {
         this.timeRange = timeRange;
         this.msg = msg;
